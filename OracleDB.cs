@@ -22,7 +22,7 @@ namespace QROperationsLoader
             string password = Settings.Default.password;
 
 
-            //string connString = "user id=acquiring;password=1;data source=//192.168.1.41:1521/magicash";
+            
             string connString = "user id="+user+";password="+ password +";data source=//"+ host + ":"+port+"/"+sid+"";
 
             OracleConnection conn = new OracleConnection();
